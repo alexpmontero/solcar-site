@@ -1,0 +1,112 @@
+$c_pink: #e6394c;
+$c_marin: #1a438a;
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+::selection{
+    background: #333333;
+    color: #ffffff;
+}
+
+.trans{
+    -webkit-transition: all .4s linear;
+	transition: all .4s linear;
+}
+
+a{text-decoration: none !important;}
+li{list-style: none}
+
+.flex_container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+/* -- WRAPPER HOME-- */
+.box_home{
+    height: 100vh;
+    width: 100%;
+    &>div{
+        width: 100%;
+    }
+    .box_idioma{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #ffffff;
+        img{
+            border-radius: 50%;
+            // border: 3px solid #f65f2a;
+        }
+    }
+    .box_imgs{
+        img{
+            height: 100px;;
+        }
+    }
+    .nav_home {
+        margin: 5rem 0;
+        ul > li{
+            display: inline-block;
+            vertical-align: middle;
+            a{
+                padding: .5rem 2rem;
+                color: #ffffff !important;
+            }
+        }
+    }
+    .box_foot{
+        bottom: 10px;
+        position: absolute;
+        width: 98%;
+        color: #ffffff;
+    }
+}
+.ttl_sections{
+    color: #e6394c;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+}
+.p_text{
+    font-weight: 600;
+    color: $c_marin;
+}
+.wrapper_about{
+    .box_post_note{
+        .note{
+            display: inline-block;
+            vertical-align: middle;
+            width: 45%;
+        }
+        .note.img{width: 20%;}
+        .note.info{
+            width: 75%;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.wrapper_service{
+    .box_oferta{
+        font-size: 1.5rem;
+        h4{color: $c_pink;}
+    }
+}
+
+.wrapper_products{
+    .box_item_products{
+        img{max-width: 100%;}
+        &>div{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .products_img{width: 25%}
+        .products_details{
+            width: 70%;
+            min-height: 200px;
+            margin-bottom: 2rem;
+        }
+    }
+}
