@@ -1,5 +1,6 @@
 $c_pink: #e6394c;
-$c_marin: #1a438a;
+$c_marin: #1a438a; 
+
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -17,12 +18,68 @@ body{
 a{text-decoration: none !important;}
 li{list-style: none}
 
+.bg_colors{
+    background: rgba(255,130,27,1);
+    background: -moz-linear-gradient(left, rgba(255,130,27,1) 0%, rgba(216,85,75,1) 14%, rgba(221,36,64,1) 39%, rgba(74,178,226,1) 88%, rgba(74,178,226,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,130,27,1)), color-stop(14%, rgba(216,85,75,1)), color-stop(39%, rgba(221,36,64,1)), color-stop(88%, rgba(74,178,226,1)), color-stop(100%, rgba(74,178,226,1)));
+    background: -webkit-linear-gradient(left, rgba(255,130,27,1) 0%, rgba(216,85,75,1) 14%, rgba(221,36,64,1) 39%, rgba(74,178,226,1) 88%, rgba(74,178,226,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,130,27,1) 0%, rgba(216,85,75,1) 14%, rgba(221,36,64,1) 39%, rgba(74,178,226,1) 88%, rgba(74,178,226,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,130,27,1) 0%, rgba(216,85,75,1) 14%, rgba(221,36,64,1) 39%, rgba(74,178,226,1) 88%, rgba(74,178,226,1) 100%);
+    background: linear-gradient(to right, rgba(255,130,27,1) 0%, rgba(216,85,75,1) 14%, rgba(221,36,64,1) 39%, rgba(74,178,226,1) 88%, rgba(74,178,226,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff821b', endColorstr='#4ab2e2', GradientType=1 );
+}
+
 .flex_container {
     display: -webkit-flex;
     display: flex;
     align-items: center;
     -webkit-align-items: center;
 }
+
+.ttl_sections{
+    color: $c_pink;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+}
+.p_text{
+    font-weight: 600;
+    color: $c_marin;
+}
+
+.page{
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:100vh;
+}
+
+/* -- WRAPPER HOME-- */
+header.header_fix{
+    background: rgba(255,255,255,.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border-bottom: 7px solid #ffffff;
+    .nav>li>a{
+        color: #19428a !important;
+        font-weight: 600;
+        &:focus,&:hover{
+            // background-color: transparent !important;
+            background: rgba(255,130,27,1);
+            background: -moz-linear-gradient(left, rgba(255,130,27,1) 0%, rgba(216,85,75,1) 14%, rgba(221,36,64,1) 39%, rgba(74,178,226,1) 88%, rgba(74,178,226,1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,130,27,1)), color-stop(14%, rgba(216,85,75,1)), color-stop(39%, rgba(221,36,64,1)), color-stop(88%, rgba(74,178,226,1)), color-stop(100%, rgba(74,178,226,1)));
+            background: -webkit-linear-gradient(left, rgba(255,130,27,1) 0%, rgba(216,85,75,1) 14%, rgba(221,36,64,1) 39%, rgba(74,178,226,1) 88%, rgba(74,178,226,1) 100%);
+            background: -o-linear-gradient(left, rgba(255,130,27,1) 0%, rgba(216,85,75,1) 14%, rgba(221,36,64,1) 39%, rgba(74,178,226,1) 88%, rgba(74,178,226,1) 100%);
+            background: -ms-linear-gradient(left, rgba(255,130,27,1) 0%, rgba(216,85,75,1) 14%, rgba(221,36,64,1) 39%, rgba(74,178,226,1) 88%, rgba(74,178,226,1) 100%);
+            background: linear-gradient(to right, rgba(255,130,27,1) 0%, rgba(216,85,75,1) 14%, rgba(221,36,64,1) 39%, rgba(74,178,226,1) 88%, rgba(74,178,226,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff821b', endColorstr='#4ab2e2', GradientType=1 );
+        }
+    }
+
+
+}
+
 
 /* -- WRAPPER HOME-- */
 .box_home{
@@ -64,16 +121,10 @@ li{list-style: none}
         color: #ffffff;
     }
 }
-.ttl_sections{
-    color: #e6394c;
-    font-weight: 600;
-    letter-spacing: -1.5px;
-}
-.p_text{
-    font-weight: 600;
-    color: $c_marin;
-}
+
 .wrapper_about{
+    background-image: url('../imgs/bg_about.png');
+    background-position: center center;
     .box_post_note{
         .note{
             display: inline-block;
@@ -89,6 +140,8 @@ li{list-style: none}
 }
 
 .wrapper_service{
+    background-image: url('../imgs/bg_service.png');
+    background-position: center top;
     .box_oferta{
         font-size: 1.5rem;
         h4{color: $c_pink;}
@@ -96,6 +149,8 @@ li{list-style: none}
 }
 
 .wrapper_products{
+    background-image: url('../imgs/bg_product.png');
+    background-position: center top;
     .box_item_products{
         img{max-width: 100%;}
         &>div{
@@ -109,4 +164,10 @@ li{list-style: none}
             margin-bottom: 2rem;
         }
     }
+}
+
+.wrapper_contact{
+    background-image: url('../imgs/bg_contact.png');
+    background-position: center top;
+
 }

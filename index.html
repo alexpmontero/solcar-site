@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="shorcut icon" type="imge/x-ico" href="imgs/" />
+	<link rel="shorcut icon" type="imge/x-ico" href="imgs/ico_solcar.ico" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SOLCAR</title>
@@ -19,13 +19,50 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <main>
-        <section id="home" class="wrapper_home slide_home ">
+    <header class="header_fix">
+        <nav>
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navTo" href="#home">
+                        <img src="imgs/logo_solcar-header.png" alt="Logo Oficial">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav text-uppercase">
+                        <li><a href="#about" class="navTo">Acerca de nosotros</a></li>
+                        <li><a href="#service" class="navTo">Servicios</a></li>
+                        <li><a href="#products" class="navTo">Productos</a></li>
+                        <li><a href="#contact" class="navTo">Contacto</a></li>
+                    </ul>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                            <span class="box_idioma cambio" > 
+                                    <span  class="dropdown">
+                                        <span id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="imgs/ico-idioma.png" alt="idiomas" data-toggle="tooltip" data-placement="bottom" title="Cambiar idioma">
+                                        </span>
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                            <li><a href="index-us.html"> <img src="imgs/ico-idioma-mx.png" alt=""> Inglés</a></li>
+                                                <li role="separator" class="divider"></li>
+                                            <li><a href="index-pt.html"> <img src="imgs/ico-idioma-pt.png" alt=""> Portugués</a></li>
+                                            </ul>
+                                    </span>
+                                </span>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </header>
+    <main id="container">
+        <section id="home" class="wrapper_home page slide_home ">
             <div class="container flex_container box_home">
                 <div class="text-center">
-                    <!-- <span class="box_idioma">
-                        <img src="imgs/ico-idioma.png" alt="Ingles">
-                    </span> -->
                     <span class="box_idioma cambio" > 
                         <span  class="dropdown">
                             <span id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,10 +80,10 @@
                     </div>
                     <nav class="nav_home">
                         <ul class="text-uppercase">
-                            <li><a href="#about">Acerca de nosotros</a></li>
-                            <li><a href="#service">Servicios</a></li>
-                            <li><a href="#products">Productos</a></li>
-                            <li><a href="#contact">Contacto</a></li>
+                            <li><a href="#about" class="navTo">Acerca de nosotros</a></li>
+                            <li><a href="#service" class="navTo">Servicios</a></li>
+                            <li><a href="#products" class="navTo">Productos</a></li>
+                            <li><a href="#contact" class="navTo">Contacto</a></li>
                         </ul>
                     </nav>
                     <div class="box_foot">
@@ -60,7 +97,7 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="wrapper_about">
+        <section id="about" class="page flex_container wrapper_about">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
@@ -70,7 +107,7 @@
                             <div class="note img text-center">
                                 <img src="imgs/img_about.png" alt="Acerca de nosotros">
                             </div>
-                            <div class="note info">
+                            <div class="note info bg_colors">
                                 <p><b>Clientes globales</b> y un compromiso con la calidad nos respaldan. Disponemos de <b>alianzas estratégicas</b> para llevar las soluciones necesarias en el Caribe mexicano, y a donde la industria lo requiera.</p>
                             </div>
                         </div>
@@ -81,7 +118,7 @@
                 </div>
             </div>
         </section>
-        <section id="service" class="wrapper_service">
+        <section id="service" class="page flex_container wrapper_service">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
@@ -101,8 +138,7 @@
                 </div>
             </div>
         </section>
-
-        <section id="products" class="wrapper_products">
+        <section id="products" class="page flex_container wrapper_products">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
@@ -175,7 +211,7 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="wrapper_about">
+        <section id="contact" class="page flex_container wrapper_contact">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
@@ -201,7 +237,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/vegas.min.js"></script>
-	<script src="js/transiciones.js"></script>
+    <script src="js/jquery.fadenavigation.min.js"></script>
 	<script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 
@@ -213,7 +249,9 @@
     		// new WOW().init();
 			// $("a.transicion").transicion();
     		// $('[data-toggle="tooltip"]').tooltip();
-		});
+        });
+        $(function(){ $('#container').fadeNavigation(); });
+        
 	</script>
 </body>
 </html>
