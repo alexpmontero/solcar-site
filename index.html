@@ -8,13 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SOLCAR</title>
 
-    <meta name="theme-color" content="#000000"/>
-    <meta name="msapplication-navbutton-color" content="#000000"/> 
+    <meta name="theme-color" content="#093683"/>
+    <meta name="msapplication-navbutton-color" content="#093683"/> 
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/vegas.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -29,7 +30,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navTo" href="#home">
+                    <a class="navTo box_img_head" href="#home">
                         <img src="imgs/logo_solcar-header.png" alt="Logo Oficial">
                     </a>
                 </div>
@@ -42,20 +43,20 @@
                     </ul>
                     
                     <ul class="nav navbar-nav navbar-right">
-                            <span class="box_idioma cambio" > 
-                                    <span  class="dropdown">
-                                        <span id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="imgs/ico-idioma.png" alt="idiomas" data-toggle="tooltip" data-placement="bottom" title="Cambiar idioma">
-                                        </span>
-                                        <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                            <li><a href="index-us.html"> <img src="imgs/ico-idioma-mx.png" alt=""> Inglés</a></li>
-                                                <li role="separator" class="divider"></li>
-                                            <li><a href="index-pt.html"> <img src="imgs/ico-idioma-pt.png" alt=""> Portugués</a></li>
-                                            </ul>
-                                    </span>
+                        <span class="box_idioma cambio" > 
+                            <span  class="dropdown">
+                                <span id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="imgs/ico-idioma.png" alt="idiomas" data-toggle="tooltip" data-placement="bottom" title="Cambiar idioma">
                                 </span>
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <li><a href="index-us.html"> <img src="imgs/ico-idioma-mx.png" alt=""> Inglés</a></li>
+                                        <li role="separator" class="divider"></li>
+                                    <li><a href="index-pt.html"> <img src="imgs/ico-idioma-pt.png" alt=""> Portugués</a></li>
+                                    </ul>
+                            </span>
+                        </span>
                     </ul>
-                </div><!-- /.navbar-collapse -->
+                </div>
             </div>
         </nav>
     </header>
@@ -88,43 +89,58 @@
                     </nav>
                     <div class="box_foot">
                         <div class="container">
-                            <span class="pull-left">
+                            <div class="col-xs-3">
                                 <img src="imgs/logo-x.png" alt="Logo CENZA">
-                            </span>
-                            <small class="pull-right">© 2018. Todos los derechos reservados. Diseño y desarrollo por GO multimedios.</small>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <small class="pull-right">© 2018. Todos los derechos reservados. Diseño y desarrollo por GO multimedios.</small>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about" class="page flex_container wrapper_about">
+        <section id="about" class="wrapper_about page ">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 mtop">
                         <h1 class="ttl_sections">Acerca de Nosotros</h1>
                         <p class="p_text">SOLCAR es una compañía filial de Corporativo CEMZA, empresa orgullosamente mexicana con más de 50 años de experiencia suministrando servicios y consumibles a la industria Offshore en el Golfo de México, Estados Unidos, Singapur y Colombia.</p>
                         <div class="box_post_note">
                             <div class="note img text-center">
                                 <img src="imgs/img_about.png" alt="Acerca de nosotros">
                             </div>
-                            <div class="note info bg_colors">
+                            <div class="note info">
                                 <p><b>Clientes globales</b> y un compromiso con la calidad nos respaldan. Disponemos de <b>alianzas estratégicas</b> para llevar las soluciones necesarias en el Caribe mexicano, y a donde la industria lo requiera.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                      ...  
+                </div>
+                <div class="box_foot in_sections ">
+                    <div class="">
+                        <div class="col-xs-3">
+                            <img src="imgs/logo-x.png" alt="Logo CENZA">
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <small class="pull-right">© 2018. Todos los derechos reservados. Diseño y desarrollo por GO multimedios.</small>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class=" box_item_about">
+                <img src="imgs/about-c.png" alt="" class="item_about c">
+                <img src="imgs/about-a.png" alt="" class="item_about a">
+                <img src="imgs/about-b.png" alt="" class="item_about b">
+            </div>
         </section>
-        <section id="service" class="page flex_container wrapper_service">
+        <section id="service" class="wrapper_service page ">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 mtop">
                         <h1 class="ttl_sections">Servicios</h1>
                         <p class="p_text">Le ofrecemos el servicio de gestión y operación de los Recursos Humanos con enfoque en la atención personalizada que le ayude a optimizar  sus operaciones y tiempos de respuesta.</p>
                         <div class="box_oferta">
+                            <br>
                             <h4>Nuestra oferta de valor incluye:</h4>
                             <ul class="box_ul_point">
                                 <li>Contrataciones</li>
@@ -134,17 +150,36 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6 text-center box_service_img mtop">
+                        <img src="imgs/servicio.png" alt="Servicios Generales">
+                    </div>
+                </div>
+            </div>
+            <div class="box_foot in_sections ">
+                <div class="">
+                    <div class="col-xs-3">
+                        <img src="imgs/logo-x.png" alt="Logo CENZA">
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <small class="pull-right">© 2018. Todos los derechos reservados. Diseño y desarrollo por GO multimedios.</small>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="products" class="page flex_container wrapper_products">
+        <section id="products" class="wrapper_products page ">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
+                <div class="row mtop wrapper_products_ttl">
+                    <div class="col-sm-7">
                         <h1 class="ttl_sections">Productos</h1> 
                     </div>
-                    <div class="col-sm-6">descargar</div>
+                    <div class="col-sm-5 box_download">
+                        <div class="row">
+                            <div class="col-xs-6"><small>Descarga nuestro catálogo de productos (PDF 4.5 MB.)</small></div>
+                            <div class="col-xs-6">
+                                <a class="btn_download bg_colors" download="Documento APM" href="imgs/bg_home_a.png"> Descargar <span class="ico glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="box_item_products col-sm-6">
@@ -210,32 +245,74 @@
                     </div>   
                 </div>
             </div>
-        </section>
-        <section id="contact" class="page flex_container wrapper_contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h1 class="ttl_sections">Contáctanos</h1>
-                            <p class="p_text">Estamos listos para escuchar sus necesidades y ofrecerle soluciones de valor para su industria. Comuníquese con nosotros hoy mismo.</p>
-                            <div class="box_post_note">
-                                <div class="note info">
-                                    <p>Av. Bonampak Mz. 3 lote 11, Residencial Palmeras, 77500 Cancún, Quintana Roo. México.</p>
-                                    <p>+52 01 998 187 7878 <br>
-                                            +52 01 998 321 0189</p>
-                                    <p>ventas@solcar.mx</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                          ...  
-                        </div>
+            <div class="box_foot in_sections ">
+                <div class="">
+                    <div class="col-xs-3">
+                        <img src="imgs/logo-x.png" alt="Logo CENZA">
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <small class="pull-right">© 2018. Todos los derechos reservados. Diseño y desarrollo por GO multimedios.</small>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        <section id="contact" class="wrapper_contact page top">
+            <div class="container">
+                <div class="row mtop">
+                    <div class="col-sm-6">
+                        <h1 class="ttl_sections">Contáctanos</h1>
+                        <p class="p_text">Estamos listos para escuchar sus necesidades y ofrecerle soluciones de valor para su industria. Comuníquese con nosotros hoy mismo.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="box_address">
+                            <div class="note info col-sm-8">
+                                <p>Av. Bonampak Mz. 3 lote 11, Residencial Palmeras, 77500 Cancún, Quintana Roo. México.</p>
+                                <p>+52 01 998 187 7878 <br>
+                                        +52 01 998 321 0189</p>
+                                <p>ventas@solcar.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <form class="form_contact">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="" required="" placeholder="Nombre">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="" required="" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="" required="" placeholder="Teléfono">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="2" required="" placeholder="Comentarios"></textarea>
+                            </div>
+                            
+                                <button type="submit" class="btn_summit bg_colors"><span>Enviar</span> <span class="ico glyphicon glyphicon-send" aria-hidden="true"></span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="box_foot in_sections ">
+                <div class="">
+                    <div class="col-xs-3">
+                        <img src="imgs/logo-x.png" alt="Logo CENZA">
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <small class="pull-right">© 2018. Todos los derechos reservados. Diseño y desarrollo por GO multimedios.</small>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/vegas.min.js"></script>
     <script src="js/jquery.fadenavigation.min.js"></script>
 	<script src="js/wow.min.js"></script>
@@ -246,6 +323,7 @@
 	<script>
 		$(document).ready(function() {
             slideHome();
+            header_hover();
     		// new WOW().init();
 			// $("a.transicion").transicion();
     		// $('[data-toggle="tooltip"]').tooltip();

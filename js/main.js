@@ -21,3 +21,19 @@ function slideHome() {
 	    ]
 	});
 }
+
+function header_hover() {
+	// alert("hola");
+	var dd = $('.top').scrollTop();
+    console.log('el top esta en ' + dd)
+	// $(window).scroll(function(){
+		// var dd = $('.page').offset().top;
+
+
+		if (dd == 0){	
+			$(".header_fix").show();	
+		}else{
+			$(".header_fix").hide();
+		}
+	// });
+}
