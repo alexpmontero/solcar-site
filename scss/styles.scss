@@ -17,7 +17,6 @@ body{
 
 a{text-decoration: none !important;}
 li{list-style: none}
-
 .bg_colors{
     background: rgba(255,130,27,1);
     background: -moz-linear-gradient(left, rgba(255,130,27,1) 0%, rgba(216,85,75,1) 14%, rgba(221,36,64,1) 39%, rgba(74,178,226,1) 88%, rgba(74,178,226,1) 100%);
@@ -91,7 +90,6 @@ li{list-style: none}
 
 /* -- WRAPPER HOME-- */
 header.header_fix{
-    display: none;
     background: rgba(255,255,255,.8);
     position: fixed;
     width: 100%;
